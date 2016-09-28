@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+</head>
+<body>
+    <div>
+        <form action="https://soundcloud.com">
+            <input type="image" src="assets/btn-connect-sc-l.png" />
+        </form>
+    </div>
+    <script type="text/javascript">
+
+        SC.initialize({
+          client_id: 'b7cb674b74ba6014ecc7ddfbf7f1dbda',
+          redirect_uri: 'http://localhost:63342/callback.html'
+        });
+
+        SC.connect();
+
+    </script>
+</body>
+</html>
