@@ -7,10 +7,12 @@
 </head>
 <body>
     <div>
-        <form action="https://soundcloud.com">
+        <form action="https://soundcloud.com/">
             <input type="image" src="assets/btn-connect-sc-l.png" />
         </form>
     </div>
+    <!--https://developers.soundcloud.com/docs/api/reference
+    TODO fix redirect into user details or disks -->
     <script type="text/javascript">
 
         SC.initialize({
@@ -19,7 +21,6 @@
         });
 
         SC.connect();
-
     </script>
 </body>
 </html>
